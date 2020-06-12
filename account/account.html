@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Account Page</title>
+  <link rel="stylesheet" href="https://unpkg.com/bulmaswatch/united/bulmaswatch.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="account.css">
+</head>
+
+<body>
+  <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a href="../landing/landing.html" class="navbar-item">
+        Bulma.css
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start">
+        <a href="../profile/profile.html" class="navbar-item">
+          Profile
+        </a>
+      </div>
+      <div class="navbar-end">
+        <a href="../register/register.html" class="navbar-item">
+          Register
+        </a>
+        <a href="../login/login.html" class="navbar-item">
+          Login
+        </a>
+      </div>
+    </div>
+  </nav>
+  <section class="section">
+    <div class="tile is-ancestor">
+      <div class="tile is-parent is-2">
+        <article class="tile is-child">
+          <aside class="menu">
+            <p class="menu-label">
+              General
+            </p>
+            <ul class="menu-list">
+              <li><a href="../profile/profile.html">Profile</a></li>
+              <li><a href="../feed/feed.html">Feed</a></li>
+            </ul>
+            <p class="menu-label">
+              Messages
+            </p>
+            <ul class="menu-list">
+              <li><a href="../inbox/inbox.html">Inbox <span class="tag is-warning">4</span></a></li>
+              <li><a href="../sent/sent.html">Sent</a></li>
+              <li><a href="../invites/invites.html">Invites <span class="tag is-primary">1</span></a></li>
+            </ul>
+            <p class="menu-label">
+              Settings
+            </p>
+            <ul class="menu-list">
+              <li><a href="../account/account.html">Account</a></li>
+              <li><a>Logout</a></li>
+            </ul>
+          </aside>
+        </article>
+      </div>
+      <div class="tile is-vertical">
+        <div class="tile ">
+          <div class="tile is-parent is-vertical">
+            <div class="content">
+              <h1>Account Settings</h1>
+              <article class="tile is-child">
+                <div class="field">
+                  <label class="label">Email</label>
+                  <div class="control has-icons-left has-icons-right">
+                    <input class="input is-success" type="email" placeholder="Email input" value="myemail@gmail.com">
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-envelope"></i>
+                    </span>
+                    <span class="icon is-small is-right">
+                      <i class="fas fa-check"></i>
+                    </span>
+                  </div>
+                  <p class="help is-success">This email is valid</p>
+                </div>
+                <h4>Social media links</h4>
+                <div class="field">
+                  <label class="label">LinkedIn</label>
+                  <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="email" placeholder="LinkedIn profile">
+                    <span class="icon is-small is-left">
+                      <i class="fab fa-linkedin"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label">Twitter</label>
+                  <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="email" placeholder="Twitter profile">
+                    <span class="icon is-small is-left">
+                      <i class="fab fa-twitter"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label">Instagram</label>
+                  <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="email" placeholder="Instagram profile">
+                    <span class="icon is-small is-left">
+                      <i class="fab fa-instagram"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label">Snapchat</label>
+                  <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="email" placeholder="Snapchat profile">
+                    <span class="icon is-small is-left">
+                      <i class="fab fa-snapchat"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label">Twitch</label>
+                  <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="email" placeholder="Twitch profile">
+                    <span class="icon is-small is-left">
+                      <i class="fab fa-twitch"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label">Dribbble</label>
+                  <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="email" placeholder="Dribbble profile">
+                    <span class="icon is-small is-left">
+                      <i class="fab fa-dribbble"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label">GitHub</label>
+                  <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="email" placeholder="GitHub profile">
+                    <span class="icon is-small is-left">
+                      <i class="fab fa-github"></i>
+                    </span>
+                  </div>
+                </div>
+                <hr>
+                <h4 class="has-text-warning">Password required to authorize changes</h4>
+                <div class="field">
+                  <label class="label">Password</label>
+                  <div class="control has-icons-left has-icons-right">
+                    <input class="input is-success" type="password" placeholder="Password input">
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-lock"></i>
+                    </span>
+                    <span class="icon is-small is-right">
+                      <i class="fas fa-check"></i>
+                    </span>
+                  </div>
+                  <p class="help is-success">Password is valid</p>
+                </div>
+                <div class="field">
+                  <label class="label">Confirm Password</label>
+                  <div class="control has-icons-left has-icons-right">
+                    <input class="input is-success" type="password" placeholder="Confirm password">
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-lock"></i>
+                    </span>
+                    <span class="icon is-small is-right">
+                      <i class="fas fa-check"></i>
+                    </span>
+                  </div>
+                  <p class="help is-success">Password confirmed</p>
+                </div>
+                <div class="field is-grouped">
+                  <div class="control">
+                    <button class="button is-link">Save Changes</button>
+                  </div>
+                  <div class="control">
+                    <button class="button is-text">Cancel</button>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>The footer </strong> with <a>links</a>.
+      </p>
+    </div>
+  </footer>
+  <script async type="text/javascript" src="account.js"></script>
+</body>
+
+</html>

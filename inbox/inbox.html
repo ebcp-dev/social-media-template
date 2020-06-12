@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inbox Page</title>
+  <link rel="stylesheet" href="https://unpkg.com/bulmaswatch/united/bulmaswatch.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="inbox.css">
+</head>
+
+<body>
+  <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a href="../landing/landing.html" class="navbar-item">
+        Bulma.css
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start">
+        <a href="../profile/profile.html" class="navbar-item">
+          Profile
+        </a>
+      </div>
+      <div class="navbar-end">
+        <a href="../register/register.html" class="navbar-item">
+          Register
+        </a>
+        <a href="../login/login.html" class="navbar-item">
+          Login
+        </a>
+      </div>
+    </div>
+  </nav>
+  <section class="section">
+    <div class="tile is-ancestor">
+      <div class="tile is-parent is-2">
+        <article class="tile is-child">
+          <aside class="menu">
+            <p class="menu-label">
+              General
+            </p>
+            <ul class="menu-list">
+              <li><a href="../profile/profile.html">Profile</a></li>
+              <li><a href="../feed/feed.html">Feed</a></li>
+            </ul>
+            <p class="menu-label">
+              Messages
+            </p>
+            <ul class="menu-list">
+              <li><a href="../inbox/inbox.html">Inbox <span class="tag is-warning">4</span></a></li>
+              <li><a href="../sent/sent.html">Sent</a></li>
+              <li><a href="../invites/invites.html">Invites <span class="tag is-primary">1</span></a></li>
+            </ul>
+            <p class="menu-label">
+              Settings
+            </p>
+            <ul class="menu-list">
+              <li><a href="../account/account.html">Account</a></li>
+              <li><a>Logout</a></li>
+            </ul>
+          </aside>
+        </article>
+      </div>
+      <div class="tile is-vertical">
+        <div class="tile">
+          <div class="tile is-parent is-vertical is-4">
+            <div class="content">
+              <h1>Inbox</h1>
+              <article class="tile is-child message is-info">
+                <div class="message-header">
+                  <p>Message title</p>
+                  <button class="delete" aria-label="delete"></button>
+                </div>
+                <div class="message-body">
+                  Message preview
+                  <p class="has-text-weight-light">from <a>John Doe</a></p>
+                </div>
+              </article>
+              <article class="tile is-child message is-primary">
+                <div class="message-header">
+                  <p>Message title</p>
+                  <button class="delete" aria-label="delete"></button>
+                </div>
+                <div class="message-body">
+                  Message preview
+                  <p class="has-text-weight-light">from <a>John Doe</a></p>
+                </div>
+              </article>
+              <article class="tile is-child message is-primary">
+                <div class="message-header">
+                  <p>Message title</p>
+                  <button class="delete" aria-label="delete"></button>
+                </div>
+                <div class="message-body">
+                  Message preview
+                  <p class="has-text-weight-light">from <a>John Doe</a></p>
+                </div>
+              </article>
+              <article class="tile is-child message is-primary">
+                <div class="message-header">
+                  <p>Message title</p>
+                  <button class="delete" aria-label="delete"></button>
+                </div>
+                <div class="message-body">
+                  Message preview
+                  <p class="has-text-weight-light">from <a>John Doe</a></p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child notification">
+              <div class="level">
+                <div class="level-left">
+                  <p class="title">Message content</p>
+                </div>
+                <div class="level-right">
+                  <a class="button" onclick="showModal()">Reply</a>&nbsp;
+                  <a class="button is-danger">Delete</a>
+                </div>
+              </div>
+              <p class="subtitle">Message subtitle</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="reply-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Replying to: John Doe</p>
+        <button id="close-reply-modal" class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div class="content">
+          <p>John Doe:</p>
+          <blockquote>Message content</blockquote>
+        </div>
+        <div class="field">
+          <label class="label">Message</label>
+          <div class="control">
+            <textarea class="textarea" placeholder="Textarea"></textarea>
+          </div>
+        </div>
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Send</button>
+        <button id="cancel-reply-modal" class="button">Cancel</button>
+      </footer>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>The footer </strong> with <a>links</a>.
+      </p>
+    </div>
+  </footer>
+  <script async type="text/javascript" src="inbox.js"></script>
+</body>
+
+</html>

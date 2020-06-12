@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profile Page</title>
+  <link rel="stylesheet" href="https://unpkg.com/bulmaswatch/united/bulmaswatch.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="profile.css">
+</head>
+
+<body>
+  <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a href="../landing/landing.html" class="navbar-item">
+        Bulma.css
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start">
+        <a href="../profile/profile.html" class="navbar-item">
+          Profile
+        </a>
+      </div>
+      <div class="navbar-end">
+        <a href="../register/register.html" class="navbar-item">
+          Register
+        </a>
+        <a href="../login/login.html" class="navbar-item">
+          Login
+        </a>
+      </div>
+    </div>
+  </nav>
+  <section class="section">
+    <div class="tile is-ancestor">
+      <div class="tile is-parent is-2 is-hidden-mobile">
+        <article class="tile is-child">
+          <aside class="menu">
+            <p class="menu-label">
+              General
+            </p>
+            <ul class="menu-list">
+              <li><a href="../profile/profile.html">Profile</a></li>
+              <li><a href="../feed/feed.html">Feed</a></li>
+            </ul>
+            <p class="menu-label">
+              Messages
+            </p>
+            <ul class="menu-list">
+              <li><a href="../inbox/inbox.html">Inbox <span class="tag is-warning">4</span></a></li>
+              <li><a href="../sent/sent.html">Sent</a></li>
+              <li><a href="../invites/invites.html">Invites <span class="tag is-primary">1</span></a></li>
+            </ul>
+            <p class="menu-label">
+              Settings
+            </p>
+            <ul class="menu-list">
+              <li><a href="../account/account.html">Account</a></li>
+              <li><a>Logout</a></li>
+            </ul>
+          </aside>
+        </article>
+      </div>
+      <div class="tile is-vertical">
+        <div class="tile">
+          <div class="is-hidden-tablet">
+            <a onclick="showModal()" class="button is-info">Menu/Profile</a>
+          </div>
+          <div class="tile is-parent is-vertical">
+            <article class="tile is-child notification is-warning">
+              <p class="title">Thread</p>
+              <div class="tags">
+                <span class="tag">Tags</span>
+                <span class="tag is-info">Tags</span>
+                <span class="tag is-success">Tags</span>
+                <span class="tag is-warning">Tags</span>
+                <span class="tag is-danger">Tags</span>
+              </div>
+            </article>
+            <article class="tile is-child notification is-warning">
+              <p class="title">Thread</p>
+              <div class="tags">
+                <span class="tag">Tags</span>
+                <span class="tag is-info">Tags</span>
+                <span class="tag is-success">Tags</span>
+                <span class="tag is-warning">Tags</span>
+                <span class="tag is-danger">Tags</span>
+              </div>
+            </article>
+            <article class="tile is-child notification is-warning">
+              <p class="title">Thread</p>
+              <div class="tags">
+                <span class="tag">Tags</span>
+                <span class="tag is-info">Tags</span>
+                <span class="tag is-success">Tags</span>
+                <span class="tag is-warning">Tags</span>
+                <span class="tag is-danger">Tags</span>
+              </div>
+            </article>
+            <article class="tile is-child notification is-warning">
+              <p class="title">Thread</p>
+              <div class="tags">
+                <span class="tag">Tags</span>
+                <span class="tag is-info">Tags</span>
+                <span class="tag is-success">Tags</span>
+                <span class="tag is-warning">Tags</span>
+                <span class="tag is-danger">Tags</span>
+              </div>
+            </article>
+            <article class="tile is-child notification is-warning">
+              <p class="title">Thread</p>
+              <div class="tags">
+                <span class="tag">Tags</span>
+                <span class="tag is-info">Tags</span>
+                <span class="tag is-success">Tags</span>
+                <span class="tag is-warning">Tags</span>
+                <span class="tag is-danger">Tags</span>
+              </div>
+            </article>
+          </div>
+          <div class="tile is-parent is-vertical is-4 is-hidden-mobile">
+            <article class="tile is-child">
+              <div class="level">
+                <div class="level-item">
+                  <figure class="image is-128x128">
+                    <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+                  </figure>
+                </div>
+              </div>
+              <div class="level">
+                <div class="level-item">
+                  <div class="content has-text-centered">
+                    <p class="subtitle">John Doe</p>
+                    <p>A short bio lorem ipsum.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="has-text-centered">
+                <p class="menu-label">
+                  Social
+                </p>
+                <ul class="menu-list">
+                  <li>
+                    <a><span class="icon"><i class="fab fa-linkedin"></i></span> LinkedIn</a>
+                  </li>
+                  <li>
+                    <a><span class="icon"><i class="fab fa-twitter"></i></span> Twitter</a>
+                  </li>
+                  <li>
+                    <a><span class="icon"><i class="fab fa-instagram"></i></span> Instagram</a>
+                  </li>
+                  <li>
+                    <a><span class="icon"><i class="fab fa-snapchat"></i></span> Snapchat</a>
+                  </li>
+                  <li>
+                    <a><span class="icon"><i class="fab fa-twitch"></i></span> Twitch</a>
+                  </li>
+                  <li>
+                    <a><span class="icon"><i class="fab fa-dribbble"></i></span> Dribbble</a>
+                  </li>
+                  <li>
+                    <a><span class="icon"><i class="fab fa-github"></i></span> GitHub</a>
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="profile-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">John Doe</p>
+        <button id="close-profile-modal" class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div class="level">
+          <div class="level-item">
+            <figure class="image is-128x128">
+              <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+            </figure>
+          </div>
+        </div>
+        <div class="level">
+          <div class="level-item">
+            <div class="content has-text-centered">
+              <p>A short bio lorem ipsum.</p>
+            </div>
+          </div>
+        </div>
+        <p class="menu-label">
+          Social
+        </p>
+        <ul class="menu-list">
+          <li>
+            <a><span class="icon"><i class="fab fa-linkedin"></i></span> LinkedIn</a>
+          </li>
+          <li>
+            <a><span class="icon"><i class="fab fa-twitter"></i></span> Twitter</a>
+          </li>
+          <li>
+            <a><span class="icon"><i class="fab fa-instagram"></i></span> Instagram</a>
+          </li>
+          <li>
+            <a><span class="icon"><i class="fab fa-snapchat"></i></span> Snapchat</a>
+          </li>
+          <li>
+            <a><span class="icon"><i class="fab fa-twitch"></i></span> Twitch</a>
+          </li>
+          <li>
+            <a><span class="icon"><i class="fab fa-dribbble"></i></span> Dribbble</a>
+          </li>
+          <li>
+            <a><span class="icon"><i class="fab fa-github"></i></span> GitHub</a>
+          </li>
+        </ul>
+        <hr />
+        <aside class="menu">
+          <p class="menu-label">
+            General
+          </p>
+          <ul class="menu-list">
+            <li><a href="../profile/profile.html">Profile</a></li>
+            <li><a href="../feed/feed.html">Feed</a></li>
+          </ul>
+          <p class="menu-label">
+            Messages
+          </p>
+          <ul class="menu-list">
+            <li><a href="../inbox/inbox.html">Inbox <span class="tag is-warning">4</span></a></li>
+            <li><a href="../sent/sent.html">Sent</a></li>
+            <li><a href="../invites/invites.html">Invites <span class="tag is-primary">1</span></a></li>
+          </ul>
+          <p class="menu-label">
+            Settings
+          </p>
+          <ul class="menu-list">
+            <li><a href="../account/account.html">Account</a></li>
+            <li><a>Logout</a></li>
+          </ul>
+        </aside>
+      </section>
+      <footer class="modal-card-foot">
+      </footer>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>The footer </strong> with <a>links</a>.
+      </p>
+    </div>
+  </footer>
+  <script async type="text/javascript" src="profile.js"></script>
+</body>
+
+</html>
